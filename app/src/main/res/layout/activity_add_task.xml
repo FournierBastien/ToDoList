@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/layout_info"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/add_task_titre"
+                android:hint="Titre"
+                android:textSize="30sp"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/white"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/add_task_description"
+                android:hint="Description"
+                android:textSize="20sp"
+                android:inputType="textMultiLine"
+                android:textColorHint="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/white"
+                app:met_singleLineEllipsis="true"
+                />
+
+                <android.support.design.button.MaterialButton
+                    android:id="@+id/add_task_dateLimite"
+                    android:layout_width="179dp"
+                    android:layout_height="36dp"
+                    android:background="@color/colorPrimary"
+                    android:onClick="showTimePickerDialog"
+                    android:hint="Date limite"
+                    android:textSize="14sp" />
+
+                <android.support.design.button.MaterialButton
+                    android:id="@+id/add_task_heureLimite"
+                    android:layout_width="179dp"
+                    android:layout_height="36dp"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/colorPrimary"
+                    android:onClick="showTimePickerDialog"
+                    android:hint="Heure limite"
+                    android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addTask"
+        android:src="@drawable/ic_icons8_ok"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="AddTask"
+        app:elevation="6dp"
+
+        app:pressedTranslationZ="12dp"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_marginBottom="102dp"
+        app:fabSize="normal"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cancelTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="130dp"
+        android:onClick="cancelTask"
+        android:src="@drawable/ic_icons8_annuler"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|right"
+        app:pressedTranslationZ="12dp" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/list_task"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>-->
+
+</android.support.design.widget.CoordinatorLayout>

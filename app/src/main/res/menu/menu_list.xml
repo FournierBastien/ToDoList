@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:id="@+id/nvl_tache"
+        android:title="Nouvelle tâche"
+        android:icon="@drawable/ic_icons8_plus"
+        />
+    <item android:id="@+id/param" android:title="Profil" android:icon="@drawable/ic_icons8_utilisateur_masculin"/>
+    <item android:id="@+id/deconnexion" android:title="Déconnexion" android:icon="@drawable/ic_icons8_deconnexion"/>
+</menu>

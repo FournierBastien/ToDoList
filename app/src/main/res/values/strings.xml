@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="ouvrir">Ouvrir</string>
+    <string name="fermer">Fermer</string>
+    <string name="email">bastien.todolist.checkbox</string>
+    <string name="password">bastien.todolist.checkbox</string>
+    <string name="checkbox">bastien.todolist.checkbox</string>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+
+        android:id="@+id/foreground"
+        android:layout_width="379dp"
+        android:layout_height="115dp"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/titre_task"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            android:text="titre"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/description_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateLimite"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-2dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="description"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dateLimite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titre_task"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/description_task"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="dateLimite"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/heureLimite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/titre_task"
+            android:layout_toRightOf="@+id/dateLimite"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="heureLimite"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+
+        <Button
+            android:id="@+id/buttonPartager"
+            android:layout_width="31dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+
+            android:layout_marginEnd="98dp"
+            android:background="@drawable/ic_icons8_partager" />
+
+        <Button
+            android:id="@+id/buttonModifier"
+            android:layout_width="31dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/ic_icons8_modifier"
+            android:onClick="btnmodifier" />
+
+        <Button
+            android:id="@+id/buttonSupprimer"
+            android:layout_width="31dp"
+            android:layout_height="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/ic_icons8_supprimer"
+            android:onClick="btnsupprimer"
+            android:textAlignment="viewEnd" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
